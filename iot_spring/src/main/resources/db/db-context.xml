@@ -36,9 +36,9 @@
 			</bean>
 		</property>
 	</bean>
-	<!-- 
+	
 	<aop:config proxy-target-class="true">
-		<aop:pointcut id="txAdvisePointCut" expression="execution(* com.test..service.*Service.*(..))"/>
+		<aop:pointcut id="txAdvisePointCut" expression="execution(* com.iot.sp..service.*Service..*(..))"/>
 		<aop:advisor id="transactionAdvisor" pointcut-ref="txAdvisePointCut" advice-ref="txAdvice"/>
 	</aop:config>
 	
@@ -50,7 +50,7 @@
 			<tx:method name="save*" propagation="REQUIRED" />
 			<tx:method name="*" propagation="REQUIRED" />
 		</tx:attributes>
-	</tx:advice> -->
+	</tx:advice>
 	
 	<tx:annotation-driven proxy-target-class="true" transaction-manager="txManager"/>
 

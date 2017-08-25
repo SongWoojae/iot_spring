@@ -9,7 +9,7 @@
 	</settings>
 	
 	<typeAliases>
-    	<typeAlias alias="user" type="com.iot.sp.user.dto.User"/>
+    	<typeAlias alias="user" type="com.iot.sp.user.dto.UserInfo"/>
 	</typeAliases>
 	<mappers>
 		<mapper resource="com/iot/sp/user/sql/user_sql.xml" />
