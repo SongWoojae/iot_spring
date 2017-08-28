@@ -13,15 +13,16 @@ public class UserInfo {
 	private String hp2;
 	private String hp3;
 	private int userNum;
-	private int departnaum;
+	private int departnum;
 	private String userrolelevel;
 	private String gender;
 	
-	public int getDepartnaum() {
-		return departnaum;
+	
+	public int getDepartnum() {
+		return departnum;
 	}
-	public void setDepartnaum(int departnaum) {
-		this.departnaum = departnaum;
+	public void setDepartnum(int departnum) {
+		this.departnum = departnum;
 	}
 	public String getUserrolelevel() {
 		return userrolelevel;

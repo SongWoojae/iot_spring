@@ -5,9 +5,31 @@
     <div class="container">
       <div class="starter-template">
         <h1 >Board Main</h1>
-        <p class="lead" >${pageContext.request.contextPath}하고 싶은 말을 써보세요!</p>
-        <button id="btn" class="btn btn-lg btn-primary btn-block"
-				type="button">LOGOUT</a></button>
+        <p class="lead" ></p>
       </div>
+        <button id="btn" class="btn btn-lg btn-primary btn-block" data-url="${rPath}/user/logout">LOGOUT</button>
     </div><!-- /.container -->
 
+<script>
+
+$(document).ready(function(){
+	$("input[type='button']").click(function(){
+		var url = this.getAttribute("data-url");
+		if(url){
+			location.href=url;
+		}
+	})
+	$("button[data-url]").click(function(){
+		var url = this.getAttribute("data-url");
+		if(url){
+			location.href=url;
+		}
+	})
+})
+</script>
+<body>
+
+<input type="button" value="유저리스트 이동" data-url="${rPath}/user/list">
+
+</body>
+</html>
