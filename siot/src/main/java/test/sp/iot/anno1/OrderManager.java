@@ -1,6 +1,8 @@
 package test.sp.iot.anno1;
 
 
+import javax.inject.Inject;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
@@ -9,7 +11,7 @@ import org.springframework.stereotype.Service;
 public class OrderManager {
 	
 	private String name;
-	@Autowired
+	@Inject
 	@Qualifier("BMW")
 	private Maker maker;
 	@Autowired
