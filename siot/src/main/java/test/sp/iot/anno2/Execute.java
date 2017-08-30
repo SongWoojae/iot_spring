@@ -1,6 +1,7 @@
 package test.sp.iot.anno2;
 
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -13,6 +14,11 @@ public class Execute {
 	
 	@Autowired
 	List<Worker> workerList ;
+	
+	@Autowired
+	@Qualifier("map")
+	Map<String, Object> map;
+	
 	Worker w;
 	
 	@Autowired
@@ -35,7 +41,7 @@ public class Execute {
 //			w.goToWork();
 //			w.work();
 //			w.getOffWork();
-//		}
+//		}	
 //		Developer d = (Developer) factory.getBean("developer");
 //		e.setWorker(d);
 		e.w.work();
