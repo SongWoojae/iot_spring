@@ -24,3 +24,20 @@ String version = "1.3.2";
 <link rel="stylesheet" href="<c:url value="/resources/ui/btsp3.7.7/css/bootstrap.min.css?version=<%=version%>"/>"/>
 <link rel="stylesheet" href="<c:url value="/resources/ui/btsp3.7.7/css/bootstrap-table.css?version=<%=version%>"/>"/>
 <link rel="stylesheet" href="<c:url value="/resources/ui/common.css?version=<%=version%>"/>"/>
+
+<div class="container">
+	<div class="page-header">				
+			<ul class="nav nav-tabs" >
+				<li><a href="/user/main">Home</a></li>
+				<li><a href="/board/board_select.jsp">Board</a></li>
+				<li><a href="/user/list">UserInfo</a></li>
+				<li><a href="/role/role_select.jsp">권한정보</a></li>
+				<li><a href="/vendor/vendor_list.jsp">회사정보</a></li>
+				<li><a href="/goods/goods_list.jsp">상품정보</a></li>
+				<li><a href="/user/logout_ok.jsp"></a></li>
+			</ul>
+		</div>
+	</div>
+
+	
+	<!--/.nav-collapse -->
