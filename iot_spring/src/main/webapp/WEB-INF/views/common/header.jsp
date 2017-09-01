@@ -25,6 +25,29 @@ String version = "1.3.2";
 <link rel="stylesheet" href="<c:url value="/resources/ui/btsp3.7.7/css/bootstrap-table.css?version=<%=version%>"/>"/>
 <link rel="stylesheet" href="<c:url value="/resources/ui/common.css?version=<%=version%>"/>"/>
 
+<script>
+var rootPath = "${rootPath}";
+$(document).ready(function(){
+	var nowUrl = "${nowUrl}";
+	var obj = $("a[href='" + nowUrl + "']").parent().attr("class","active");
+})
+function doMovePage(pageId){
+	var url = "${rootPath}";
+	if(pageId=="board"){
+		url += "/board/board_select.jsp";
+	}else if(pageId=="main"){
+		url += "/";
+	}else if(pageId=="insertBoard"){
+		url += "/board/board_insert.jsp";
+	}
+	location.href=url;
+}
+
+function alertOp(){
+	alert($("#op").val());
+}
+</script>
+
 <div class="container">
 	<div class="page-header">				
 			<ul class="nav nav-tabs" >

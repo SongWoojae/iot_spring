@@ -12,7 +12,7 @@
 			<input type="password" name="pwd" id="pwd" class="form-control"
 				placeholder="Password" required>
 			<div class="checkbox">
-				<label> <input type="checkbox" value="remember-me">
+				<label> <input type="checkbox" value="1" id="saveId">
 					Remember me
 				</label>
 			</div>
@@ -29,6 +29,7 @@
 		var param = {};
 		param["userId"] = id;
 		param["userPwd"] = pwd;
+		param["saveId"] = $("#saveId").prop("checked");
 		param = JSON.stringify(param);
 		var a = { 
 		        type     : "POST"

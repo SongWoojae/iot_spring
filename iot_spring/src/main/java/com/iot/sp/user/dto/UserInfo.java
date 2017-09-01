@@ -16,9 +16,17 @@ public class UserInfo {
 	private int departNum;
 	private String userRoleLevel;
 	private String gender;
+	private boolean saveId;
 	
 	
 	
+	
+	public boolean isSaveId() {
+		return saveId;
+	}
+	public void setSaveId(boolean saveId) {
+		this.saveId = saveId;
+	}
 	public int getDepartNum() {
 		return departNum;
 	}
